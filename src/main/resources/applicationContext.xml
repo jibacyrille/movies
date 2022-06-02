@@ -26,12 +26,12 @@
 
       </bean>
 
-      <bean class="com.mycompany.dvdstore.controller.MovieController">
+      <bean class="com.mycompany.dvdstore.dvdstoreweb.controller.MovieController">
 
       </bean> -->
 
         <!--id, property name et ref sont remplacés par autowire="byType"
-        <bean id="movieController" class="com.mycompany.dvdstore.controller.MovieController">
+        <bean id="movieController" class="com.mycompany.dvdstore.dvdstoreweb.controller.MovieController">
             <property name="movieService" ref="defaultMovieService"/>
         </bean>
         -->

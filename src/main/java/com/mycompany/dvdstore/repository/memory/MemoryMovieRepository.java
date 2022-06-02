@@ -7,11 +7,27 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
+
 //@Repository
 public class MemoryMovieRepository implements MovieRepositoryInterface {
+    private static long lastID=0L;
     private List<Movie> movies=new ArrayList<>();
-    public void add(Movie movie){
+    public Movie add(Movie movie){
+        movie.setId(++lastID);
         movies.add(movie);
         System.out.println("The movie "+movie.getTitle()+" has been added");
+        return movie;
+    }
+
+    @Override
+    public List<Movie> list() {
+        return movies;
+    }
+
+    @Override
+    public Movie getById(long id) {
+        return movies.stream().
+                filter(m -> m.getId()==id).
+                findFirst().get();
     }
 }
