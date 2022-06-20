@@ -1,0 +1,7 @@
+D:\Workspace\dvdstore\src\main\java\com\mycompany\dvdstore\entity\Movie.java
+D:\Workspace\dvdstore\src\main\java\com\mycompany\dvdstore\service\MovieServiceInterface.java
+D:\Workspace\dvdstore\src\main\java\com\mycompany\dvdstore\repository\database\DatabaseMovieRepository.java
+D:\Workspace\dvdstore\src\main\java\com\mycompany\dvdstore\repository\file\FileMovieRepository.java
+D:\Workspace\dvdstore\src\main\java\com\mycompany\dvdstore\repository\memory\MemoryMovieRepository.java
+D:\Workspace\dvdstore\src\main\java\com\mycompany\dvdstore\repository\MovieRepositoryInterface.java
+D:\Workspace\dvdstore\src\main\java\com\mycompany\dvdstore\service\DefaultMovieService.java

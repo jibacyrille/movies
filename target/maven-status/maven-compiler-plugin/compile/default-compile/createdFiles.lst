@@ -1,0 +1,6 @@
+com\mycompany\dvdstore\repository\memory\MemoryMovieRepository.class
+com\mycompany\dvdstore\service\MovieServiceInterface.class
+com\mycompany\dvdstore\repository\file\FileMovieRepository.class
+com\mycompany\dvdstore\entity\Movie.class
+com\mycompany\dvdstore\repository\MovieRepositoryInterface.class
+com\mycompany\dvdstore\service\DefaultMovieService.class
