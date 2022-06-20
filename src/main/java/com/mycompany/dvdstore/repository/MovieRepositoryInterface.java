@@ -1,13 +1,18 @@
 package com.mycompany.dvdstore.repository;
 
 import com.mycompany.dvdstore.entity.Movie;
+import org.springframework.data.jpa.repository.EntityGraph;
+import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
+import java.util.Optional;
 
-public interface MovieRepositoryInterface {
+public interface MovieRepositoryInterface extends CrudRepository<Movie,Long> {
 
-    Movie add(Movie movie);
+    @EntityGraph(value = "movie.actor-and-reviews", type = EntityGraph.EntityGraphType.FETCH)
+    Optional<Movie> findById(Long id);
+  /*  Movie add(Movie movie);
     List<Movie> list();
     Movie getById(long id);
-
+*/
 }
